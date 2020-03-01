@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/leecx?useSSL=true
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+
+mybatis:
+  type-aliases-package: com.imooc.pojo
+  mapper-locations: classpath:mapper/*.xml
+mapper:
+  mappers: com.imooc.utils.MyMapper
+  not-empty: false
+  identity: MYSQL
+logging:
+  level:
+    org.springframework.web: DEBUG
+
+server:
+  port: 9999
