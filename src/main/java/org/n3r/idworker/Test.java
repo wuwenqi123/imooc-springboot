@@ -6,7 +6,7 @@ public class Test {
 
 		for (int i = 0 ; i < 1000 ; i ++) {
 //			System.out.println(Sid.nextShort());
-			System.out.println("测试本地仓库");
+			System.out.println("000000000");
 		}
 	}
 
